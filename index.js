@@ -74,7 +74,7 @@ async function run() {
         res.send(order);
     })
     // get order by email orders
-    app.get('/order', async(req, res)=> {
+    app.get('/myOrder', async(req, res)=> {
       let query ;
       const email =  req.query.email;
       if(email){
